@@ -6,23 +6,33 @@ namespace Övning_5
     {
         static void Main(string[] args)
         {
-            bool loop = true;
+            int counter = 0;
+            double number;
+            double sum = 0;
 
-            while (loop)
+            while (true)
             {
                 //Be användaren skriva in ett tal upprepade gånger
                 Console.WriteLine("Skriv in ett tal:");
-                double input = double.Parse(Console.ReadLine());
+                bool input = double.TryParse(Console.ReadLine(), out number);
 
-                //Efter varje inmatning ska summan av de inmatade talen adderas
-                double sum = input + input;
-                Console.WriteLine($"Summan av dina tal är: {sum}");
+                if (input)
+                {
+                    //Efter varje inmatning ska summan av de inmatade talen adderas
+                    sum += number;
+                    Console.WriteLine($"Summan av dina tal är: {sum}");
+                    counter++;
+                }
+                else
+                {
+                    //Skriver man inte in ett tal, stäng programmet
+                    break;
+                }
             }
 
-
-            //Skriver man inte in ett tal, stäng programmet
-
             //Skriv tillsist ut medelvärdet av alla tal
+            double averageNumber = sum / counter;
+            Console.WriteLine($"Medelvärdet av dina tal är {averageNumber}");
 
 
 
