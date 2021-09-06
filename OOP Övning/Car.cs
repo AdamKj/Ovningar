@@ -8,7 +8,12 @@ namespace OOP_Övning
 {
     class Car
     {
-        public string _brand;
-        public string _color;
+        public string Brand { get; set; }
+        public string Color { get; set; }
+
+        public override string ToString()
+        {
+            return $"This is a {Color} {Brand}!";
+        }
     }
 }

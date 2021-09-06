@@ -8,12 +8,16 @@ namespace OOP_Övning
         {
             Car car1 = new Car();
             Car car2 = new Car();
-            car1._brand = "Audi";
-            car1._color = "White";
-            car2._brand = "Volvo";
-            car2._color = "Black";
-            Console.WriteLine($"{car1._color} {car1._brand}");
-            Console.WriteLine($"{car2._color} {car2._brand}");
+
+            car1.Brand = "Audi";
+            car1.Color = "White";
+            
+            car2.Brand = "Volvo";
+            car2.Color = "Black";
+            
+
+            Console.WriteLine(car1.ToString());
+            Console.WriteLine(car2.ToString());
 
             Console.ReadKey();
         }
