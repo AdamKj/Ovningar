@@ -9,7 +9,7 @@ namespace Övning_12
             //Fråga användaren hur många tal den vill mata in
             Console.WriteLine("Hur många tal vill du skriva in?");
             int inputAmount = int.Parse(Console.ReadLine());
-            int[] array = new int[inputAmount];
+            string[] array = new string[inputAmount];
 
             //Fråga sedan efter tal i tur och ordning
             Console.WriteLine("Skriv nu in alla talen du vill ha");
@@ -17,16 +17,27 @@ namespace Övning_12
 
             for (int i = 0; i < array.Length; i++)
             {
-                inputNumbers = int.Parse(Console.ReadLine());
-                array[i] = inputNumbers;
-                Array.Reverse(array);
+                string input = Console.ReadLine();
+                if (int.TryParse(input, out inputNumbers))
+                {
+                    array[i] = input;
+                }
+                else 
+                {
+                    i--;
+                }
+
+            }
+            
+            //När alla tal är inmatade, skriv ut dem i omvänd ordning
+            Array.Reverse(array);
+
+            Console.Write("Omvända talet är ");
+            foreach (var numbers in array)
+            {
+                Console.Write(numbers);
             }
 
-
-            //När alla tal är inmatade, skriv ut de i omvänd ordning
-            Console.WriteLine($"Omvända talet är {inputNumbers}");
-
-            
 
             Console.ReadKey();
         }

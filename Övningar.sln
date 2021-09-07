@@ -29,7 +29,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOP Övning", "OOP Övning\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Övning 19", "Övning 19\Övning 19.csproj", "{1BC975DE-BF33-4F88-A90E-9C462FCB2B7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 12", "Övning 12\Övning 12.csproj", "{94A7E121-04BA-4CD4-B760-C46D65433FBF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Övning 12", "Övning 12\Övning 12.csproj", "{94A7E121-04BA-4CD4-B760-C46D65433FBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 13", "Övning 13\Övning 13.csproj", "{D3EDCD28-FB8B-42A2-9C9C-2FF9E5AB2890}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 14", "Övning 14\Övning 14.csproj", "{125A8F6E-48EC-4C4F-A33C-31C11976A5F0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +97,14 @@ Global
 		{94A7E121-04BA-4CD4-B760-C46D65433FBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94A7E121-04BA-4CD4-B760-C46D65433FBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94A7E121-04BA-4CD4-B760-C46D65433FBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3EDCD28-FB8B-42A2-9C9C-2FF9E5AB2890}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3EDCD28-FB8B-42A2-9C9C-2FF9E5AB2890}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3EDCD28-FB8B-42A2-9C9C-2FF9E5AB2890}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3EDCD28-FB8B-42A2-9C9C-2FF9E5AB2890}.Release|Any CPU.Build.0 = Release|Any CPU
+		{125A8F6E-48EC-4C4F-A33C-31C11976A5F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{125A8F6E-48EC-4C4F-A33C-31C11976A5F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{125A8F6E-48EC-4C4F-A33C-31C11976A5F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{125A8F6E-48EC-4C4F-A33C-31C11976A5F0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
