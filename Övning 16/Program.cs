@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Övning_16
 {
@@ -6,45 +7,38 @@ namespace Övning_16
     {
         static void Main(string[] args)
         {
-            //Gör om uppgift 6, enkel miniräknare, så att man kan mata in allt på samma rad
+            //Gör om uppgift 6, enkel miniräknare, så att man kan mata in allt på samma rad te x. 3 + 5
+
+            double number = 0;
+            double result = 0;
+            var operators = new List<char> {'+', '-', '*', '/' };
+
             //Fråga användaren efter ett tal
             Console.WriteLine("Skriv in ett tal");
-            double inputOne = double.Parse(Console.ReadLine());
+            var input = double.TryParse(Console.ReadLine(), out number);
 
-            //Fråga sedan efter ett av följande +,-,*,/
-            Console.WriteLine("Skriv nu in ett av följande:");
-            Console.WriteLine("+");
-            Console.WriteLine("-");
-            Console.WriteLine("*");
-            Console.WriteLine("/");
-            string operand = Console.ReadLine();
-
-            //Fråga användaren efter ett andra tal
-            Console.WriteLine("Skriv nu in ett till tal");
-            double inputTwo = double.Parse(Console.ReadLine());
-
-            double result = 0;
-            switch (operand)
+            if (input == operators.Contains('+'))
             {
-                case "+":
-                    result = inputOne + inputTwo;
-                    break;
-                case "-":
-                    result = inputOne - inputTwo;
-                    break;
-                case "*":
-                    result = inputOne * inputTwo;
-                    break;
-                case "/":
-                    result = inputOne / inputTwo;
-                    break;
-                default:
-                    Console.WriteLine("Vänligen skriv bara in ett av följande +,-,*,/");
-                    break;
+                number += result;
+            }
+            else if (input == operators.Contains('-'))
+            {
+                number -= result;
+            }
+            else if (input == operators.Contains('*'))
+            {
+                number *= result;
+            }
+            else
+            {
+                number /= result;
             }
 
+            
+
+
             //Slå sedan ihop summan av de inmatade talen och tecknet och skriv ut, te x. 3 * 5 = 15
-            Console.WriteLine($"Resultatet av talen blev {inputOne} {operand} {inputTwo} = {result}");
+            Console.WriteLine($"Resultatet av talen blev {number}");
 
             Console.ReadKey();
         }
