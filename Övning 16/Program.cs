@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace Övning_16
 {
@@ -19,7 +18,7 @@ namespace Övning_16
             //Slå sedan ihop summan av de inmatade talen och tecknet och skriv ut, te x. 3 * 5 = 15
             foreach (var operand in operands)
             {
-                if (input.Contains(operand)) 
+                if (input.Contains(operand))
                 {
                     Console.WriteLine($"{numbers[0].Trim()} {operand} {numbers[1].Trim()} = {PerformOperation(numbers, operand)}");
                 }
@@ -62,7 +61,6 @@ namespace Övning_16
         {
             return firstNumber - secondNumber;
         }
-
         private static double Addition(double firstNumber, double secondNumber)
         {
             return firstNumber + secondNumber;
