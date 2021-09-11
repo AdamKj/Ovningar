@@ -9,19 +9,23 @@ namespace Övning_18
         {
             //Be användaren mata in en mening
             Console.WriteLine("Skriv in valfri mening");
-            string input = Console.ReadLine();
-            int numberOfLetters = input.Length;
+            var input = Console.ReadLine();
+            var numberOfLetters = input.Length;
 
             var separators = new[] { ' ', ',', '.', '!', '?' };
-            var empty = input.Split(separators);
+            var emptySpaces = input.Split(separators);
 
             double result = 0;
             foreach (var sep in separators)
             {
-                input.Trim();
-                result = sep / numberOfLetters;
+                if (input.Contains(sep))
+                {
+                    string words = emptySpaces[];
+                    Console.WriteLine(words);
+                    result = numberOfLetters / sep;
+                }
             }
-            Console.WriteLine(result);
+            Console.WriteLine($"Det genomsnittliga antalet bokstäver i alla ord i din mening är {result}");
 
 
             //var words = input.Split(separators, StringSplitOptions.RemoveEmptyEntries);
