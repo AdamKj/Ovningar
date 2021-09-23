@@ -25,9 +25,79 @@ namespace WPFDemo
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Number_Click(object sender, RoutedEventArgs e)
         {
-            Output.Text += "Hejsan";
+            if (e.Source is Button button)
+            {
+                Display.Text += button.Content;
+            }
+        }
+
+        private void Clear_Click(object sender, RoutedEventArgs e)
+        {
+            Display.Clear();
+        }
+
+        private void Add_Click(object sender, RoutedEventArgs e)
+        {
+            var lastIndexInText = Display.Text.Length - 1;
+
+            if (lastIndexInText != -1)
+            {
+                if (Display.Text[lastIndexInText] != '+' && Display.Text[lastIndexInText] != '-')
+                {
+                    Display.Text += "+";
+                }
+            }
+        }
+
+        private void Sub_Click(object sender, RoutedEventArgs e)
+        {
+            var lastIndexInText = Display.Text.Length - 1;
+
+            if (lastIndexInText != -1)
+            {
+                if (Display.Text[lastIndexInText] != '+' && Display.Text[lastIndexInText] != '-')
+                {
+                    Display.Text += "-";
+                }
+            }
+        }
+
+        private void Times_Click(object sender, RoutedEventArgs e)
+        {
+            Display.Text += "*";
+        }
+
+        private void Divide_Click(object sender, RoutedEventArgs e)
+        {
+            Display.Text += "/";
+        }
+
+        private void Sum_Click(object sender, RoutedEventArgs e)
+        {
+            var separators = new[] { '+', '-', '*', '/', '=' };
+            var numbers = Display.Text.Split(separators);
+
+            var result = 0;
+
+            foreach (var number in numbers)
+            {
+                var num = int.Parse(number);
+                
+                if (Display.Text.Contains('+'))
+                {
+                    result += num;
+                }
+                else if (Display.Text.Contains('-'))
+                {
+                    result -= num;
+                }
+            }
+
+            var output = "=" + result;
+
+            Display.Text += output;
         }
     }
 }

@@ -11,37 +11,141 @@
     mc:Ignorable="d">
     <Grid x:Name="RootGrid">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="100"/>
-            <ColumnDefinition/>
-            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="100" />
+            <ColumnDefinition />
+            <ColumnDefinition Width="100" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="25"/>
-            <RowDefinition/>
-            <RowDefinition Height="10"/>
+            <RowDefinition Height="25" />
+            <RowDefinition />
+            <RowDefinition Height="10" />
         </Grid.RowDefinitions>
-        <Grid x:Name="DisplayGrid" Grid.Row="1" Grid.Column="1">
+        <Grid
+            x:Name="DisplayGrid"
+            Grid.Row="1"
+            Grid.Column="1">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
             </Grid.RowDefinitions>
-            <TextBox x:Name="Display" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="6" Background="Aquamarine"/>
+            <TextBox
+                x:Name="Display"
+                Grid.Row="1"
+                Grid.Column="1"
+                Grid.ColumnSpan="6"
+                Background="Aquamarine" />
+            <Button
+                x:Name="One"
+                Grid.Row="3"
+                Grid.Column="1"
+                Click="Number_Click"
+                Content="1" />
+            <Button
+                x:Name="Two"
+                Grid.Row="3"
+                Grid.Column="2"
+                Click="Number_Click"
+                Content="2" />
+            <Button
+                x:Name="Three"
+                Grid.Row="3"
+                Grid.Column="3"
+                Click="Number_Click"
+                Content="3" />
+            <Button
+                x:Name="Four"
+                Grid.Row="4"
+                Grid.Column="1"
+                Click="Number_Click"
+                Content="4" />
+            <Button
+                x:Name="Five"
+                Grid.Row="4"
+                Grid.Column="2"
+                Click="Number_Click"
+                Content="5" />
+            <Button
+                x:Name="Six"
+                Grid.Row="4"
+                Grid.Column="3"
+                Click="Number_Click"
+                Content="6" />
+            <Button
+                x:Name="Seven"
+                Grid.Row="5"
+                Grid.Column="1"
+                Click="Number_Click"
+                Content="7" />
+            <Button
+                x:Name="Eight"
+                Grid.Row="5"
+                Grid.Column="2"
+                Click="Number_Click"
+                Content="8" />
+            <Button
+                x:Name="Nine"
+                Grid.Row="5"
+                Grid.Column="3"
+                Click="Number_Click"
+                Content="9" />
+            <Button
+                x:Name="Zero"
+                Grid.Row="6"
+                Grid.Column="2"
+                Click="Number_Click"
+                Content="0" />
+            <Button
+                x:Name="Clear"
+                Grid.Row="3"
+                Grid.Column="5"
+                Click="Clear_Click"
+                Content="Clear" />
+            <Button
+                x:Name="Add"
+                Grid.Row="3"
+                Grid.Column="4"
+                Click="Add_Click"
+                Content="+" />
+            <Button
+                x:Name="Sub"
+                Grid.Row="4"
+                Grid.Column="4"
+                Click="Sub_Click"
+                Content="-" />
+            <Button
+                x:Name="Times"
+                Grid.Row="5"
+                Grid.Column="4"
+                Click="Times_Click"
+                Content="*" />
+            <Button
+                x:Name="Divide"
+                Grid.Row="6"
+                Grid.Column="4"
+                Click="Divide_Click"
+                Content="/" />
+            <Button
+                x:Name="Sum"
+                Grid.Row="7"
+                Grid.Column="4"
+                Click="Sum_Click"
+                Content="=" />
         </Grid>
     </Grid>
 </Window>
