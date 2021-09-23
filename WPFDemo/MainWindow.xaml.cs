@@ -29,7 +29,7 @@ namespace WPFDemo
         {
             if (e.Source is Button button)
             {
-                Display.Text += button.Content;
+                Display.Text += button.Content.ToString();
             }
         }
 
@@ -66,38 +66,93 @@ namespace WPFDemo
 
         private void Times_Click(object sender, RoutedEventArgs e)
         {
-            Display.Text += "*";
+            var lastIndexInText = Display.Text.Length - 1;
+
+            if (lastIndexInText != -1)
+            {
+                if (Display.Text[lastIndexInText] != '+' && Display.Text[lastIndexInText] != '-' && Display.Text[lastIndexInText] != '*')
+                {
+                    Display.Text += "*";
+                }
+            }
         }
 
         private void Divide_Click(object sender, RoutedEventArgs e)
         {
-            Display.Text += "/";
+            var lastIndexInText = Display.Text.Length - 1;
+
+            if (lastIndexInText != -1)
+            {
+                if (Display.Text[lastIndexInText] != '+' && Display.Text[lastIndexInText] != '-' && Display.Text[lastIndexInText] != '*' && Display.Text[lastIndexInText] != '/')
+                {
+                    Display.Text += "/";
+                }
+            }
         }
 
         private void Sum_Click(object sender, RoutedEventArgs e)
         {
-            var separators = new[] { '+', '-', '*', '/', '=' };
-            var numbers = Display.Text.Split(separators);
-
-            var result = 0;
-
-            foreach (var number in numbers)
+            try
             {
-                var num = int.Parse(number);
-                
-                if (Display.Text.Contains('+'))
-                {
-                    result += num;
-                }
-                else if (Display.Text.Contains('-'))
-                {
-                    result -= num;
-                }
+                Result();
+            }
+            catch (Exception)
+            {
+                Display.Text = "Error! Tryck på 'CE' och skriv in vad du vill räkna ut först!";
             }
 
-            var output = "=" + result;
+        }
 
-            Display.Text += output;
+        private void Result()
+        {
+            string operand;
+            int ioperand = 0;
+
+            if (Display.Text.Contains("+"))
+            {
+                ioperand = Display.Text.IndexOf("+");
+            }
+            else if (Display.Text.Contains("-"))
+            {
+                ioperand = Display.Text.IndexOf("-");
+            }
+            else if (Display.Text.Contains("*"))
+            {
+                ioperand = Display.Text.IndexOf("*");
+            }
+            else if (Display.Text.Contains("/"))
+            {
+                ioperand = Display.Text.IndexOf("/");
+            }
+
+            operand = Display.Text.Substring(ioperand, 1);
+            double firstNumber = Convert.ToDouble(Display.Text.Substring(0, ioperand));
+            double secondNumber = Convert.ToDouble(Display.Text.Substring(ioperand + 1, Display.Text.Length - ioperand - 1));
+
+            if (operand == "+")
+            {
+                Display.Text += "=" + (firstNumber + secondNumber);
+            }
+            else if (operand == "-")
+            {
+                Display.Text += "=" + (firstNumber - secondNumber);
+            }
+            else if (operand == "*")
+            {
+                Display.Text += "=" + (firstNumber * secondNumber);
+            }
+            else
+            {
+                Display.Text += "=" + (firstNumber / secondNumber);
+            }
+        }
+
+        private void Delete_Click(object sender, RoutedEventArgs e)
+        {
+            if (Display.Text.Length > 0)
+            {
+                Display.Text = Display.Text.Substring(0, Display.Text.Length - 1);
+            }
         }
     }
 }
