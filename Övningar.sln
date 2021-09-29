@@ -43,9 +43,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Övning 17", "Övning 17\Ö
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Övning 18", "Övning 18\Övning 18.csproj", "{FB29A1A4-5A5E-4D55-A0ED-09E0DD27F3C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsDemo", "WinFormsDemo\WinFormsDemo.csproj", "{1BB610B6-B165-46E7-8DB8-04D0A41CA0FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsDemo", "WinFormsDemo\WinFormsDemo.csproj", "{1BB610B6-B165-46E7-8DB8-04D0A41CA0FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFDemo", "WPFDemo\WPFDemo.csproj", "{84C90E65-A2F5-4F9A-AEEC-392834369332}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPFDemo", "WPFDemo\WPFDemo.csproj", "{84C90E65-A2F5-4F9A-AEEC-392834369332}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFTextEditor", "WPFTextEditor\WPFTextEditor.csproj", "{B1543EE7-28A1-4B40-8E72-3A6C309D959F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -141,6 +143,10 @@ Global
 		{84C90E65-A2F5-4F9A-AEEC-392834369332}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84C90E65-A2F5-4F9A-AEEC-392834369332}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84C90E65-A2F5-4F9A-AEEC-392834369332}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1543EE7-28A1-4B40-8E72-3A6C309D959F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1543EE7-28A1-4B40-8E72-3A6C309D959F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1543EE7-28A1-4B40-8E72-3A6C309D959F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1543EE7-28A1-4B40-8E72-3A6C309D959F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
