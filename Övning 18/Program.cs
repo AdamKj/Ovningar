@@ -20,7 +20,7 @@ namespace Övning_18
             {
                 if (input.Contains(sep))
                 {
-                    string words = emptySpaces[];
+                    string words = emptySpaces[0];
                     Console.WriteLine(words);
                     result = numberOfLetters / sep;
                 }

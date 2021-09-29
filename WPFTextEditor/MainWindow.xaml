@@ -5,6 +5,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:WPFTextEditor"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:views="clr-namespace:WPFTextEditor.Views"
     Title="MainWindow"
     Width="800"
     Height="450"
@@ -18,6 +19,9 @@
         </TabItem>
         <TabItem Header="Demo">
             <local:Demo />
+        </TabItem>
+        <TabItem Header="Views">
+            <views:Button />
         </TabItem>
     </TabControl>
 </Window>
