@@ -49,6 +49,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPFDemo", "WPFDemo\WPFDemo.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFTextEditor", "WPFTextEditor\WPFTextEditor.csproj", "{B1543EE7-28A1-4B40-8E72-3A6C309D959F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBindings", "DataBindings\DataBindings.csproj", "{83BD0160-F452-4B80-A25C-0C073882AAA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 25", "Övning 25\Övning 25.csproj", "{61882537-D8A2-49F4-8C96-21B6A68B9D86}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -147,6 +151,14 @@ Global
 		{B1543EE7-28A1-4B40-8E72-3A6C309D959F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1543EE7-28A1-4B40-8E72-3A6C309D959F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1543EE7-28A1-4B40-8E72-3A6C309D959F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83BD0160-F452-4B80-A25C-0C073882AAA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83BD0160-F452-4B80-A25C-0C073882AAA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83BD0160-F452-4B80-A25C-0C073882AAA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83BD0160-F452-4B80-A25C-0C073882AAA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61882537-D8A2-49F4-8C96-21B6A68B9D86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61882537-D8A2-49F4-8C96-21B6A68B9D86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61882537-D8A2-49F4-8C96-21B6A68B9D86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61882537-D8A2-49F4-8C96-21B6A68B9D86}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
