@@ -20,10 +20,23 @@ namespace DataBindings
     /// </summary>
     public partial class MainWindow : Window
     {
+        Car car = new Car("Volvo V60", 499000, "Black");
         public MainWindow()
         {
             InitializeComponent();
-            DataContext = new Car("Volvo", 499000, "Black");
+            DataContext = car;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            car.HalfPrice();
+
+            BindingExpression binding = PriceText.GetBindingExpression(TextBlock.TextProperty);
+            binding.UpdateTarget();
+            binding = PriceTextBox.GetBindingExpression(TextBox.TextProperty);
+            binding.UpdateTarget();
+            //var message = $"{car.Model}\n{car.Price}\n{car.Color}";
+            //MessageBox.Show(message);
         }
     }
 }

@@ -11,9 +11,17 @@
     mc:Ignorable="d">
     <DockPanel>
         <StackPanel DockPanel.Dock="Bottom">
-            <TextBlock Text="{Binding Model, Mode=OneWay}" />
-            <TextBlock Text="{Binding Price, Mode=OneWay}" />
-            <TextBlock Text="{Binding Color, Mode=OneWay}" />
+            <TextBlock Text="{Binding Model, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" />
+            <TextBox Text="{Binding Model, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            <TextBlock x:Name="PriceText" Text="{Binding Price, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" />
+            <TextBox x:Name="PriceTextBox" Text="{Binding Price, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            <TextBlock Text="{Binding Color, Mode=OneWay, UpdateSourceTrigger=PropertyChanged}" />
+            <TextBox Text="{Binding Color, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
         </StackPanel>
+        <Button
+            Width="70"
+            Height="50"
+            Click="Button_Click"
+            Content="Click this!" />
     </DockPanel>
 </Window>

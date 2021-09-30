@@ -9,7 +9,7 @@ namespace DataBindings
     class Car
     {
         private string _carModel;
-        private int _carPrice;
+        private double _carPrice;
         private string _carColor;
 
         public string Model
@@ -18,7 +18,7 @@ namespace DataBindings
             set => _carModel = value;
         }
 
-        public int Price
+        public double Price
         {
             get => _carPrice;
             set => _carPrice = value;
@@ -34,7 +34,7 @@ namespace DataBindings
         {
 
         }
-        public Car(string model, int price, string color)
+        public Car(string model, double price, string color)
         {
             _carModel = model;
             _carPrice = price;
