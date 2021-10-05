@@ -17,13 +17,16 @@
             Margin="0,0,120,0"
             HorizontalAlignment="Center"
             Click="Enable_Click"
-            Content="Enable" />
+            Content="Enable"
+            IsEnabled="True" />
         <Button
             x:Name="Disable"
             Width="120"
             Height="80"
             Margin="120,0,0,0"
             HorizontalAlignment="Center"
-            Content="Disable" />
+            Click="Disable_Click"
+            Content="Disable"
+            IsEnabled="False" />
     </Grid>
 </Window>
