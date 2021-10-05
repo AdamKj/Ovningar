@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Enable__Disable_knappar
+namespace Enable_Disable_Knappar
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

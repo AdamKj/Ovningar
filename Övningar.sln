@@ -59,8 +59,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Övning 23", "Övning 23\Ö
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF Textbox + Knapp", "WPF Textbox + Knapp\WPF Textbox + Knapp.csproj", "{8CB06239-C535-4B0B-B3AB-A872110F8F25}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enable, Disable knappar", "Enable, Disable knappar\Enable, Disable knappar.csproj", "{157AF914-E653-4A10-A292-03C126498598}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -179,10 +177,6 @@ Global
 		{8CB06239-C535-4B0B-B3AB-A872110F8F25}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CB06239-C535-4B0B-B3AB-A872110F8F25}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8CB06239-C535-4B0B-B3AB-A872110F8F25}.Release|Any CPU.Build.0 = Release|Any CPU
-		{157AF914-E653-4A10-A292-03C126498598}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{157AF914-E653-4A10-A292-03C126498598}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{157AF914-E653-4A10-A292-03C126498598}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{157AF914-E653-4A10-A292-03C126498598}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
