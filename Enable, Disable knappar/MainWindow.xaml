@@ -24,7 +24,6 @@
             Height="80"
             Margin="120,0,0,0"
             HorizontalAlignment="Center"
-            Content="Disable"
-            IsEnabled="False" />
+            Content="Disable" />
     </Grid>
 </Window>

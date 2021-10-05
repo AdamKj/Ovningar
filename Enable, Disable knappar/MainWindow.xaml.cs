@@ -27,7 +27,8 @@ namespace Enable__Disable_knappar
 
         private void Enable_Click(object sender, RoutedEventArgs e)
         {
-
+            Enable.IsEnabled = true;
+            Disable.IsEnabled = false;
         }
     }
 }
