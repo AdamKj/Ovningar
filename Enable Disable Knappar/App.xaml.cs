@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace Enable__Disable_knappar
+namespace Enable_Disable_Knappar
 {
     /// <summary>
     /// Interaction logic for App.xaml
