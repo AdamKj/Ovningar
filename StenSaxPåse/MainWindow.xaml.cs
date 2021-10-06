@@ -73,8 +73,7 @@ namespace StenSaxPåse
             else if (_playerPicks == "Sten" && _computer == "Sax") // Player: Sten, Computer: Sax = Player vann
             {
                 MessageBox.Show($"Du valde {_playerPicks} och datorn valde {_computer}. {_playerWins}", "Resultat");
-                Resultat.Content += result.ToString();
-
+                result = Convert.ToInt32(Resultat.Content);
             }
             else if (_playerPicks == "Påse" && _computer == "Sax") // Player: Påse, Computer: Sax = Computer vann
             {

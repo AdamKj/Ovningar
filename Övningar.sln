@@ -65,6 +65,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NumericUpDown", "NumericUpD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StenSaxPåse", "StenSaxPåse\StenSaxPåse.csproj", "{725FAEEE-D1EC-476E-BC81-4F10D5EDF49C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadAndWrite", "ReadAndWrite\ReadAndWrite.csproj", "{029928B6-1600-4010-BD29-72495CF6AE4B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -195,6 +197,10 @@ Global
 		{725FAEEE-D1EC-476E-BC81-4F10D5EDF49C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{725FAEEE-D1EC-476E-BC81-4F10D5EDF49C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{725FAEEE-D1EC-476E-BC81-4F10D5EDF49C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{029928B6-1600-4010-BD29-72495CF6AE4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{029928B6-1600-4010-BD29-72495CF6AE4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{029928B6-1600-4010-BD29-72495CF6AE4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{029928B6-1600-4010-BD29-72495CF6AE4B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
