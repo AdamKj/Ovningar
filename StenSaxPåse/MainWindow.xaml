@@ -49,7 +49,7 @@
                 Height="60"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Top"
-                Content="Poäng:" />
+                Content="Poäng: " />
         </Grid>
     </Grid>
 </Window>

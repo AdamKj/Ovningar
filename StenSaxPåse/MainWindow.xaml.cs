@@ -28,6 +28,8 @@ namespace StenSaxPåse
         int _randomType;
         string _playerPicks;
 
+        Score score = new Score();
+
         public MainWindow()
         {
             InitializeComponent();
@@ -64,51 +66,81 @@ namespace StenSaxPåse
             string _playerWins = "Du vann!";
             string _compWins = "Datorn vann..";
             string _draw = "Det blev oavgjort?!";
-            int result = 1;
 
             if (_playerPicks == "Sten" && _computer == "Påse") // Player: Sten, Computer: Påse = Computer vann
             {
-                MessageBox.Show($"Du valde {_playerPicks} och datorn valde {_computer}. {_compWins}", "Resultat");
+                MessageBox.Show($"Du valde {_playerPicks} och datorn valde {_computer}. {_compWins} {EndMessage()}", "Resultat", MessageBoxButton.OKCancel);
+                MessageBoxChoice();
             }
             else if (_playerPicks == "Sten" && _computer == "Sax") // Player: Sten, Computer: Sax = Player vann
             {
-                MessageBox.Show($"Du valde {_playerPicks} och datorn valde {_computer}. {_playerWins}", "Resultat");
-                result = Convert.ToInt32(Resultat.Content);
+                MessageBox.Show($"Du valde {_playerPicks} och datorn valde {_computer}. {_playerWins} {EndMessage()}", "Resultat", MessageBoxButton.OKCancel);
+                ScoreUpdate();
+                MessageBoxChoice();
             }
             else if (_playerPicks == "Påse" && _computer == "Sax") // Player: Påse, Computer: Sax = Computer vann
             {
-                MessageBox.Show($"Du valde {_playerPicks} och datorn valde {_computer}. {_compWins}", "Resultat");
+                MessageBox.Show($"Du valde {_playerPicks} och datorn valde {_computer}. {_compWins} {EndMessage()}", "Resultat", MessageBoxButton.OKCancel);
+                MessageBoxChoice();
 
             }
             else if (_playerPicks == "Påse" && _computer == "Sten") // Player: påse, Computer: Sten = Player vann
             {
-                MessageBox.Show($"Du valde {_playerPicks} och datorn valde {_computer}. {_playerWins}", "Resultat");
-                Resultat.Content += result.ToString();
-
+                MessageBox.Show($"Du valde {_playerPicks} och datorn valde {_computer}. {_playerWins} {EndMessage()}", "Resultat", MessageBoxButton.OKCancel);
+                ScoreUpdate();
+                MessageBoxChoice();
             }
             else if (_playerPicks == "Sax" && _computer == "Sten") // Player: Sax, Computer: Sten = Computer vann
             {
-                MessageBox.Show($"Du valde {_playerPicks} och datorn valde {_computer}. {_compWins}", "Resultat");
+                MessageBox.Show($"Du valde {_playerPicks} och datorn valde {_computer}. {_compWins} {EndMessage()}", "Resultat", MessageBoxButton.OKCancel);
+                MessageBoxChoice();
 
             }
             else if (_playerPicks == "Sax" && _computer == "Påse") // Player: Sax, Computer: Påse = Player vann
             {
-                MessageBox.Show($"Du valde {_playerPicks} och datorn valde {_computer}. {_playerWins}", "Resultat");
-                Resultat.Content += result.ToString();
-
+                MessageBox.Show($"Du valde {_playerPicks} och datorn valde {_computer}. {_playerWins} {EndMessage()}", "Resultat", MessageBoxButton.OKCancel);
+                ScoreUpdate();
+                MessageBoxChoice();
             }
             if (_playerPicks == "Sax" && _computer == "Sax")
             {
-                MessageBox.Show($"Du valde {_playerPicks} och datorn valde {_computer}. {_draw}", "Resultat");
+                MessageBox.Show($"Du valde {_playerPicks} och datorn valde {_computer}. {_draw} {EndMessage()}", "Resultat", MessageBoxButton.OKCancel);
+                MessageBoxChoice();
 
             }
             else if (_playerPicks == "Påse" && _computer == "Påse")
             {
-                MessageBox.Show($"Du valde {_playerPicks} och datorn valde {_computer}. {_draw}", "Resultat");
+                MessageBox.Show($"Du valde {_playerPicks} och datorn valde {_computer}. {_draw} {EndMessage()}", "Resultat", MessageBoxButton.OKCancel);
+                MessageBoxChoice();
             }
             else if (_playerPicks == "Sten" && _computer == "Sten")
             {
-                MessageBox.Show($"Du valde {_playerPicks} och datorn valde {_computer}. {_draw}", "Resultat");
+                MessageBox.Show($"Du valde {_playerPicks} och datorn valde {_computer}. {_draw} {EndMessage()}", "Resultat", MessageBoxButton.OKCancel);
+                MessageBoxChoice();
+            }
+        }
+
+        public void ScoreUpdate()
+        {
+            Resultat.Content = "Poäng: " + score.CurrentScore++;
+        }
+
+        public string EndMessage()
+        {
+            return "\nVill du spela igen?";
+        }
+
+        public void MessageBoxChoice()
+        {
+            MessageBoxResult result;
+
+            switch (result)
+            {
+                case MessageBoxResult.OK:
+                    break;
+                case MessageBoxResult.Cancel:
+                    Application.Current.Shutdown();
+                    break;
             }
         }
     }
