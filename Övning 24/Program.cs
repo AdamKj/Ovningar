@@ -15,11 +15,19 @@ namespace Övning_24
             //                                                                                                      #---#
 
             Console.WriteLine("1.");
-            for (int row = 0; row < 5; row++)
+            for (int row = 0; row < 4; row++)
             {
-                for (int column = 0; column < 9; column++)
+                for (int column = 0; column < 12; column++)
                 {
                     if (row == column)
+                    {
+                        Console.Write("#");
+                    }
+                    else if (row + 8 == column && row + 10 == column + 2)
+                    {
+                        Console.Write("#");
+                    }
+                    else if (row + 10 == column)
                     {
                         Console.Write("#");
                     }

@@ -69,7 +69,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadAndWrite", "ReadAndWrit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVM Demo", "MVVM Demo\MVVM Demo.csproj", "{C2DE56C2-18C9-4187-A67B-B0AFA7E1257B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 24", "Övning 24\Övning 24.csproj", "{0AA27BED-46C0-4557-BBEA-FA4C17C00DC0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Övning 24", "Övning 24\Övning 24.csproj", "{0AA27BED-46C0-4557-BBEA-FA4C17C00DC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 26", "Övning 26\Övning 26.csproj", "{53DDAFD5-E991-4A46-99EF-971087C868B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 27", "Övning 27\Övning 27.csproj", "{DC45444A-B3C0-4118-819F-60345CE5B419}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -213,6 +217,14 @@ Global
 		{0AA27BED-46C0-4557-BBEA-FA4C17C00DC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0AA27BED-46C0-4557-BBEA-FA4C17C00DC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0AA27BED-46C0-4557-BBEA-FA4C17C00DC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53DDAFD5-E991-4A46-99EF-971087C868B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53DDAFD5-E991-4A46-99EF-971087C868B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53DDAFD5-E991-4A46-99EF-971087C868B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53DDAFD5-E991-4A46-99EF-971087C868B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC45444A-B3C0-4118-819F-60345CE5B419}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC45444A-B3C0-4118-819F-60345CE5B419}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC45444A-B3C0-4118-819F-60345CE5B419}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC45444A-B3C0-4118-819F-60345CE5B419}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
