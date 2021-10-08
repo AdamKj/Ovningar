@@ -69,6 +69,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadAndWrite", "ReadAndWrit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVVM Demo", "MVVM Demo\MVVM Demo.csproj", "{C2DE56C2-18C9-4187-A67B-B0AFA7E1257B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Övning 24", "Övning 24\Övning 24.csproj", "{0AA27BED-46C0-4557-BBEA-FA4C17C00DC0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -207,6 +209,10 @@ Global
 		{C2DE56C2-18C9-4187-A67B-B0AFA7E1257B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2DE56C2-18C9-4187-A67B-B0AFA7E1257B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2DE56C2-18C9-4187-A67B-B0AFA7E1257B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AA27BED-46C0-4557-BBEA-FA4C17C00DC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AA27BED-46C0-4557-BBEA-FA4C17C00DC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AA27BED-46C0-4557-BBEA-FA4C17C00DC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AA27BED-46C0-4557-BBEA-FA4C17C00DC0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
